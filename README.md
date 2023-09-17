@@ -9,6 +9,8 @@ your modded tools configuration.
 the "ToolMaterials" Java file. TridentItem and others are not be 
 implement on this mod now, maybe later.
 
+-For attackDamage and attackSpeed are one simple value to add and an example: float attackSpeed = 1.6f ( With Default confuguration: 5.6 Attack Speed) and (With mod configuration: 1.6 attack Speed) 
+
 Example:
 
 ToolMaterials properties value:
