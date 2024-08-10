@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "stc-lib",
+	"version": "1.0.1",
+	"name": "Simplify Tool Config",
+	"description": "remake attack fonction on item tools",
+	"authors": [
+		"RayvaxLux1206!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/more-ores/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"rvl.simplify_tool_config.RayvaxLuxMod"
+		],
+		"client": [
+			"rvl.simplify_tool_config.RayvaxLuxModClient"
+		]
+	},
+	"mixins": [
+		"simplify_tool_config.mixins.json",
+		{
+			"config": "more-ores.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
